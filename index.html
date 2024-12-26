@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-info h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    .product-info p {
+      margin: 0;
+      color: #555;
+    }
+    .product-info .price {
+      margin-top: 10px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #007bff;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Product Catalog</h1>
+  </header>
+  <div class="container">
+    <div class="product">
+      <!-- Sample Product 1 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Sample Product 1">
+        <div class="product-info">
+          <h3>Sample Product 1</h3>
+          <p>High-quality item for your daily needs.</p>
+          <p class="price">₹1,500</p>
+        </div>
+      </div>
+      <!-- Sample Product 2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Sample Product 2">
+        <div class="product-info">
+          <h3>Sample Product 2</h3>
+          <p>Durable and affordable product for all.</p>
+          <p class="price">₹999</p>
+        </div>
+      </div>
+      <!-- Sample Product 3 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Sample Product 3">
+        <div class="product-info">
+          <h3>Sample Product 3</h3>
+          <p>Perfect combination of style and utility.</p>
+          <p class="price">₹2,499</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Product Catalog. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
